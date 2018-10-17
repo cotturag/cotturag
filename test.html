@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="design.css">
+    
+    <script src="jquery-3.3.1.js"></script>
+    
+    <script>        
+        function indit(){         
+                document.getElementById('anim').style.animationPlayState='running';        
+                }
+        function clicking(){
+            $('#anim').css('transform','translate(100px,10px)');            
+            }
+        function megy(){
+            $('#anyad').css('animation-play-state','running');
+           
+        }
+    </script>
+    
+
+    
+    </head>
+    <body>       
+        <a href="#">index.hu</a>
+        <a class="ilyen" href="#">index.hu</a>
+        
+        
+        <h1 style="position: absolute; right:10px; top:10px;">valami</h1>
+        <div class="bory">
+            <p class="bory">
+                A Bory-várat csak a hitvesi szerelem és a művészi álmok váraként emlegetik. Az épületen Bory Jenő szobrászművész és építészmérnök saját tervei alapján negyven nyáron keresztül dolgozott. Az építkezést a szobraival keresett összegekkel tudta finanszírozni.
+            </p>
+        </div>
+        
+        
+        <div style="position: relative; left: 60px; width:500px; height:100px;border:2px black solid;overflow:scroll;">
+            <ol>
+                <li style="cursor: pointer;">1        
+                <li style="cursor: crosshair;">2
+                <li style="float: right;">3        
+                <li>4
+                <li>5               
+            </ol>    
+        </div>    
+    
+    <div id="egyik">
+        egyik szöveg
+    </div>
+        
+    <div id="masik">
+        másik szöveg
+    </div>
+    
+    <div id="egyiket">
+        egyiket szöveg
+    </div>
+    
+<!--    <div id="o">-->
+        <div id="anim" class="anim" onmouseover="indit()">           
+            <div id="eleje">eleje</div>
+            <div id="hatulja">hátulja</div>
+            
+            
+            
+            
+        </div>
+
+<a style="font-size:50pt" href="#" onclick="clicking()">clicking</a>
+
+
+<a style="font-size:40pt" href="#" onclick="$('#anim').addClass('fordit')">fordít</a>
+<a style="font-size:40pt" href="#" onclick="$('#anim').removeClass('fordit')">vissza</a>
+<!--    </div>-->
+        
+<div id="keret">
+    <div id="anyad" onmouseover="megy()">
+        eleje
+    </div>
+<!--    <div id="b"></div>
+    <div id="c"></div>-->
+    
+</div>
+</body>
+</html>
